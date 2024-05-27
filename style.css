@@ -18,7 +18,26 @@
   margin:0;
   box-sizing: border-box;
 }
-body{
-  font-family:  Work-Sans-Regular, sans-serif;
 
+header{
+  min-height: 35dvh;
+  min-width: 200px;
+  background: hsl(292, 42%, 14%) url(assets/images/background-pattern-desktop.svg) no-repeat ;
+}
+
+main{
+  position: absolute;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 1;
+}
+
+footer{
+  min-height: 65dvh;
+  background-color: hsl(275, 100%, 97%);
+  display: grid;
+}
+footer .attribution{
+  font-family:  Work-Sans-Regular, sans-serif;
+  place-self: end center;
+  padding: 0 0 20px 0;
 }
