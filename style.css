@@ -37,7 +37,7 @@ main{
   left: 30vw;
   display: grid;
   gap: 10px;
- width: 45dvw;
+  width: 45dvw;
 }
 
 main > .faqHeader{
@@ -88,4 +88,33 @@ footer .attribution{
   font-family:  Work-Sans-Regular, sans-serif;
   place-self: end center;
   padding: 0 0 20px 0;
+}
+
+@media (max-width: 600px) {
+
+  main{
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 16px;
+    top: 20%;
+    left: 10vw;
+    display: grid;
+    gap: 10px;
+    width: 80dvw;
+    min-height: 60dvh;
+  }
+
+  main > .panel {
+    display: none;
+    font-family:  Work-Sans-Regular, sans-serif;
+    font-size: 16px;
+    color: #000;
+    max-width: auto;
+    margin : 0 auto;
+    & > p {
+      text-align: justify;
+    }
+  }
 }
