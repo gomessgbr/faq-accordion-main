@@ -33,15 +33,14 @@ main{
   z-index: 1;
   padding: 40px;
   border-radius: 16px;
-  /* max-width: 45dvw; */
   top: 20%;
   left: 30vw;
-
   display: grid;
   gap: 10px;
+ width: 45dvw;
 }
 
-main .faqHeader{
+main > .faqHeader{
   font-family:  Work-Sans-Bold, sans-serif;
   display: flex;
   gap: 16px;
@@ -64,11 +63,12 @@ main > button{
 
 }
 
-main > div {
+main > .panel {
   display: none;
   font-family:  Work-Sans-Regular, sans-serif;
   font-size: 16px;
-  color: hsl(275, 100%, 87%);
+  color: #000;
+  max-width: 45dvw;
 }
 
 
